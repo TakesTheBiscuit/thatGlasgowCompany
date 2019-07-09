@@ -1,3 +1,8 @@
 <li class="nav-item mx-3">
-    <a class="nav-link" routerLink="{{ itemLink }}">{{itemLabel}}</a>
+    <a class="nav-link" routerLink="{{ itemLink }}">
+        <ng-container *ngIf="itemIcon">
+            <img style="padding-right: 5px; margin-bottom: 8px;" src="assets/Advert Icon.png" width="20px"
+                alt="Advert Icon">
+        </ng-container> {{itemLabel}}
+    </a>
 </li>

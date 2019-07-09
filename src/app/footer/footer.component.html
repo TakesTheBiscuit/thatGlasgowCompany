@@ -10,31 +10,10 @@
                 <nav class="navbar navbar-expand w-100 bg-transparent">
                     <div class="navbar-collapse">
                         <ul class="navbar-nav mx-auto">
-                            <li class="nav-item mx-2">
-                                <a class="nav-link" href="#">Sitemap</a>
-                            </li>
-                            <span> | </span>
-                            <li class="nav-item mx-2">
-                                <a class="nav-link" href="#">Global Privacy Policy</a>
-                            </li>
-                            <span> | </span>
-                            <li class="nav-item mx-2">
-                                <a class="nav-link" href="#">Cookies Statement</a>
-                            </li>
-                            <span> | </span>
-                            <li class="nav-item mx-2">
-                                <a class="nav-link" href="#">Site Useage Agreement</a>
-                            </li>
-                            <span> | </span>
-                            <li class="nav-item mx-2">
-                                <a class="nav-link" href="#"><img style="padding-right: 5px; margin-bottom: 8px;"
-                                        src="../../assets/Advert Icon.png" width="20px"
-                                        alt="Advert Icon" />AdChoices</a>
-                            </li>
-                            <span> | </span>
-                            <li class="nav-item mx-2">
-                                <a class="nav-link" href="#">© 2018 Hilton</a>
-                            </li>
+                            <ng-container *ngFor="let item of navItems">
+                                <app-nav-item [itemLabel]="item.itemLabel" [itemLink]="item.itemLink"
+                                    [itemIcon]="item.itemIcon"></app-nav-item>
+                            </ng-container>
                         </ul>
                     </div>
                 </nav>

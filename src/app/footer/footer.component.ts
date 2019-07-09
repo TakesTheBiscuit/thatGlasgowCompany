@@ -9,6 +9,27 @@ export class FooterComponent implements OnInit {
 
   ChosenLogo = 'Footer';
 
+  navItems = [{
+    itemLabel: 'Sitemap',
+    itemLink: '#'
+  }, {
+    itemLabel: 'Global Privacy Policy',
+    itemLink: '#'
+  }, {
+    itemLabel: 'Cookies Statement',
+    itemLink: '#'
+  }, {
+    itemLabel: 'Site Useage Agreement',
+    itemLink: '#'
+  }, {
+    itemLabel: 'AdChoices',
+    itemLink: '#',
+    itemIcon: true
+  }, {
+    itemLabel: '© 2018 Hilton',
+    itemLink: '#'
+  }];
+
   constructor() { }
 
   ngOnInit() {
