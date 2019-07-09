@@ -1,0 +1,14 @@
+<nav id="menu" class="navbar navbar-expand w-100 navbar-light bg-transparent">
+
+    <app-logo [ChosenLogo]='ChosenLogo'></app-logo>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+            <ng-container *ngFor="let item of navItems">
+                <app-nav-item [itemLabel]="item.itemLabel" [itemLink]="item.itemLink"></app-nav-item>
+            </ng-container>
+        </ul>
+
+        <app-button [btnLabel]='btnLabel'></app-button>
+    </div>
+</nav>

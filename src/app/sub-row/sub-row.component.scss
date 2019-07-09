@@ -1,0 +1,31 @@
+.left-section,
+.right-section {
+  padding: 25px;
+  background-image: (linear-gradient(top, rgba(218, 219, 221, 1) 0%, rgba(0, 0, 0, 0.65) 100%)) !important;
+  .content {
+    margin-top: 100px;
+    .h2 {
+      letter-spacing: 5px;
+    }
+  }
+}
+.middle-gap {
+  min-width: 30px;
+}
+
+.left-section {
+  .content {
+    .content-box {
+      background-color: white;
+      padding: 25px;
+      width: 40%;
+      color: #3a3c41;
+      font-size: 18px;
+      border: 1px solid #fafafa;
+      border-radius: 2px;
+      .h2 {
+        color: black;
+      }
+    }
+  }
+}
